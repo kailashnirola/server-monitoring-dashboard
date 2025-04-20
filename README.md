@@ -87,7 +87,6 @@ server-monitoring-dashboard/
 Install PostgreSQL and create a database:
 
 ```sql
--- in psql shell
 CREATE DATABASE monitoring_db;
 CREATE USER monitoring_user WITH PASSWORD 'yourpass';
 GRANT ALL PRIVILEGES ON DATABASE monitoring_db TO monitoring_user;
@@ -100,7 +99,6 @@ GRANT ALL PRIVILEGES ON DATABASE monitoring_db TO monitoring_user;
 ```bash
 cd server-monitoring-dashboard/backend
 
-cp .env.example .env
 
 python3 -m venv .venv
 source .venv/bin/activate        
