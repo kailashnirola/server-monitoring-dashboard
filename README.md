@@ -100,21 +100,14 @@ GRANT ALL PRIVILEGES ON DATABASE monitoring_db TO monitoring_user;
 ```bash
 cd server-monitoring-dashboard/backend
 
-# 1. Copy .env and configure
 cp .env.example .env
-# Edit .env to set your DB URL, e.g.
-# DATABASE_URL=postgresql://monitoring_user:yourpass@localhost:5432/monitoring_db
 
-# 2. Create and activate virtual environment
 python3 -m venv .venv
-source .venv/bin/activate        # macOS/Linux
-# .venv\Scriptsctivate.bat     # Windows
+source .venv/bin/activate        
 
-# 3. Install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# 4. Run FastAPI server
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
@@ -127,10 +120,8 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```bash
 cd server-monitoring-dashboard/frontend
 
-# 1. Install dependencies
 npm install
 
-# 2. Start development server
 npm start
 ```
 
