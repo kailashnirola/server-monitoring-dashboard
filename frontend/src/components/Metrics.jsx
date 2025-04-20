@@ -55,7 +55,6 @@ export default function Metrics() {
   return (
     <div className="ml-80 p-6 space-y-6 bg-blue-700 rounded-xl w-full h-full">
       <div className="grid gap-6">
-        {/* CPU Usage Gauge */}
         <div className="bg-white p-4 rounded-xl shadow-md flex flex-col items-center">
           <h3 className="font-semibold text-gray-700 mb-4">CPU Daily Usage</h3>
           <GaugeChart percent={metrics.cpu} />
@@ -64,7 +63,6 @@ export default function Metrics() {
           </p>
         </div>
 
-        {/* RAM Usage */}
         <div className="bg-white p-4 rounded-xl shadow-md">
           <h3 className="font-semibold text-gray-700 mb-2">RAM Usage</h3>
           <ResponsiveContainer width="100%" height={150}>
@@ -85,7 +83,6 @@ export default function Metrics() {
           </ResponsiveContainer>
         </div>
 
-        {/* Network Usage */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white p-4 rounded-xl shadow-md">
             <h3 className="font-semibold text-gray-700 mb-2">Network Received (bytes)</h3>
@@ -126,7 +123,6 @@ export default function Metrics() {
           </div>
         </div>
 
-        {/* Alarms & Heat Map */}
         <div className="bg-white p-4 rounded-xl shadow-md space-y-4">
           <div className="bg-orange-100 text-orange-700 p-4 rounded-lg text-center font-semibold text-lg">
             12 Most Recent Alarms
@@ -170,7 +166,6 @@ export default function Metrics() {
         </div>
       </div>
 
-      {/* Active Instances Table */}
       <div className="bg-white p-4 rounded-xl shadow-md">
         <h3 className="text-lg font-semibold text-gray-700 mb-4">Active Instances</h3>
         <table className="w-full text-sm text-left text-gray-600">
